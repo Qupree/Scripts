@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts</title>
+</head>
+<body>
+    <script>
+        
+        let txt = "ERROR";
+        function func(x1, x2){
+            for(var i = 0; i < 4; i++){
+                if(x1[i] > 6 || x2[i] > 6)
+                {
+                    alert(txt);
+                    return;
+                }
+            }
+        }
+
+        let var1 = prompt("First number");
+        let var2 = prompt("Second number");
+
+        func(var1, var2);
+
+
+    </script>
+
+<script>
+        
+    function g(x1, x2){
+        var txt = "";
+        if(x1 == x2){
+            txt = "++";
+        }
+        else{
+            for(var i = 0; i < 4; i++){
+                for(var j = 0; j < 4; j++){
+                    if(x1[i] == x2[j])
+                    {
+                        if(i == j){
+                            txt = "+-";
+                        }else{
+                            txt = "--";
+                        }
+                    }
+                }
+            }
+        }
+        alert(txt);
+    }
+
+    let num = "1234";
+    let gn = prompt("Guess number");
+
+    g(num, gn);
+
+    
+</script>
+</body>
+</html>
